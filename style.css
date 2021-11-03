@@ -99,13 +99,11 @@ nav {
     right: 5%;
     top: 19%;
     visibility: hidden;
-    height: 0;
     transition: var(--transition);
 }
 
 .show {
     padding-block: 2.5rem;
-    height: auto;
     visibility: visible;
 }
 
@@ -125,7 +123,7 @@ nav {
     border-bottom: 20px solid transparent;
     border-top: 20px solid transparent;
     visibility: hidden;
-    transition: all .25s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .nav-menu ul {
@@ -133,11 +131,13 @@ nav {
     flex-direction: column;
     gap: 1.6rem;
     align-items: center;
-    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: all .1s ease-in-out;
 }
 
 .show ul{
-    visibility: visible;
+    height: auto;
 }
 
 .nav-menu ul li:last-child {
