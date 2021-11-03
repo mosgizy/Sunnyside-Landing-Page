@@ -52,6 +52,7 @@ h3 {
 
 img {
     max-width: 100%;
+    height: 100%;
 }
 
 ul {
@@ -268,7 +269,6 @@ nav {
 .last-service {
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 100vh; */
 }
 
 .last-service-first {
@@ -294,12 +294,10 @@ nav {
 
     .services>* {
         flex-basis: 50%;
-        /* outline: 1px solid red; */
     }
 
     .services:first-child {
         flex-direction: row-reverse;
-        margin-block-end: -.3rem;
     }
 
     .service-image img {
@@ -424,7 +422,6 @@ nav {
 @media only screen and (min-width:768px) {
     .project {
         flex-wrap: nowrap;
-        margin-block-end: -.25rem;
     }
 }
 
