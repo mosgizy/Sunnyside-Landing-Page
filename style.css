@@ -154,15 +154,16 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-block-start: 6rem;
+    margin-block-start: 6.5rem;
 }
 
 .header--one {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     letter-spacing: 8px;
     text-transform: uppercase;
     margin-block-end: 1rem;
+    font-weight: var(--font-900);
 }
 
 .header-img {
