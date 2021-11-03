@@ -28,7 +28,7 @@
     --font-primary: "Barlow", sans-serif;
     --font-secondary: "Fraunces", sans-serif;
 
-    --transition: all .35s ease-in-out;
+    --transition: all .45s ease-in-out;
 }
 
 *,
@@ -155,20 +155,22 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-block-start: 6.5rem;
+    margin-block-end:18rem;
+    position: relative;
 }
 
 .header--one {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
     letter-spacing: 8px;
     text-transform: uppercase;
-    margin-block-end: 1rem;
+    /* margin-block-end: 1rem; */
     font-weight: var(--font-900);
 }
 
 .header-img {
-    margin-block-start: 1.5rem;
-    margin-block-end: 5rem;
+    position: absolute;
+    top:165%;
 }
 
 @media only screen and (min-width:768px) {
@@ -208,6 +210,19 @@ nav {
 
     .nav-menu ul li:last-child {
         background-color: var(--white);
+        transition: var(--transition);
+    }
+
+    .nav-menu ul li:last-child:hover{
+        background-color: rgba(255, 255, 255, .3);
+    }
+
+    .nav-menu ul li:last-child a{
+        transition: var(--transition);
+    }
+
+    .nav-menu ul li:last-child:hover a{
+        color: var(--white);
     }
 
     .header-content {
@@ -215,9 +230,13 @@ nav {
         position: relative;
     }
 
+    .header--one{
+        font-size: 3.5rem;
+    }
+
     .header-img {
         position: absolute;
-        top: 150%;
+        top: 200%;
     }
 }
 
@@ -251,6 +270,7 @@ nav {
     font-family: var(--font-secondary);
     position: relative;
     padding-inline: .4rem;
+    transition: var(--transition);
 }
 
 .service-link::after {
@@ -312,6 +332,10 @@ nav {
 
     .service-content-ll {
         text-align: left;
+    }
+
+    .service-link:hover{
+        color: var(--dark-blue);
     }
 
     .last-service {
@@ -470,5 +494,18 @@ footer {
 
     .info a {
         font-size: 1.25rem;
+        transition: var(--transition);
+    }
+
+    .info a:hover{
+        color: var(--white);
+    }
+
+    .social-icon img{
+        transition: var(--transition);
+    }
+
+    .social-icon img:hover{
+        filter: invert(1) brightness(50%) sepia(100%) saturate(10000%);
     }
 }
