@@ -109,6 +109,10 @@ nav {
     visibility: visible;
 }
 
+.show.nav-menu::after{
+    visibility: visible;
+}
+
 .nav-menu::after {
     content: "";
     position: absolute;
@@ -120,6 +124,8 @@ nav {
     border-right: 20px solid var(--white);
     border-bottom: 20px solid transparent;
     border-top: 20px solid transparent;
+    visibility: hidden;
+    transition: all .25s ease-in-out;
 }
 
 .nav-menu ul {
@@ -127,6 +133,11 @@ nav {
     flex-direction: column;
     gap: 1.6rem;
     align-items: center;
+    visibility: hidden;
+}
+
+.show ul{
+    visibility: visible;
 }
 
 .nav-menu ul li:last-child {

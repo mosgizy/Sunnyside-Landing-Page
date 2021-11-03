@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
@@ -18,14 +19,16 @@
       <nav>
         <img src="images/logo.svg" alt="logo" loading="lazy" class="logo">
         <img src="images/icon-hamburger.svg" alt="hamburger" loading="lazy" class="hamburger">
-        <div class="nav-menu">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="contact">Contact</a></li>
-          </ul>
-        </div>
+        <!-- <div class="nav-menu-wrapper"> -->
+          <div class="nav-menu">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+        <!-- </div> -->
       </nav>
       <div class="header-content">
         <h1 class="header--one">We are creatives</h1>
@@ -45,9 +48,10 @@
             </picture>
           </div>
           <div class="service-content service-content-ll"">
-            <h2 class="service-header-two">Transform your brand</h2>
+            <h2 class=" service-header-two">Transform your brand</h2>
 
-            <p class="service-para">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
+            <p class="service-para">We are a full-service creative agency specializing in helping brands grow fast.
+              Engage your clients
               through compelling visuals that do most of the marketing for you.</p>
 
             <a href="#" class="service-link">Learn more</a>
@@ -65,7 +69,8 @@
           <div class="service-content service-content-ll">
             <h2 class="service-header-two">Stand out to the right audience</h2>
 
-            <p class="service-para">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            <p class="service-para">Using a collaborative formula of designers, researchers, photographers,
+              videographers, and copywriters,
               we’ll build and extend your brand in digital places.</p>
 
             <a href="#" class="service-link">Learn more</a>
@@ -76,7 +81,8 @@
           <div class="last-service last-service-first">
             <div class="service-content service-content-last">
               <h2 class="service-header-two service-last-color">Graphic design</h2>
-              <p class="service-para service-last-color">Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+              <p class="service-para service-last-color">Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures
                 potential
                 clients’ attention.</p>
             </div>
@@ -85,7 +91,8 @@
           <div class="last-service last-service-second">
             <div class="service-content service-content-last">
               <h2 class="service-header-two service-last-color">Photography</h2>
-              <p class="service-para service-last-color">Increase your credibility by getting the most stunning, high-quality photos that improve your business
+              <p class="service-para service-last-color">Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business
                 image.</p>
             </div>
           </div>
@@ -97,48 +104,51 @@
           <h2 class="testimonial-header-two">Client testimonials</h2>
           <div class="profile-wrapper">
 
-          <div class="profile">
-            <div class="profile-img">
-              <img src="images/image-emily.jpg" alt="Emily" loading="lazy">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/image-emily.jpg" alt="Emily" loading="lazy">
+              </div>
+              <div class="profile-info">
+                <p class="service-para">We put our trust in Sunnyside and they delivered, making sure our needs were met
+                  and deadlines were
+                  always hit.</p>
+                <h3 class="profile-name">Emily R.</h3>
+                <p class="profile-position">
+                  Marketing Director
+                </p>
+              </div>
             </div>
-            <div class="profile-info">
-              <p class="service-para">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
-                always hit.</p>
-              <h3 class="profile-name">Emily R.</h3>
-              <p class="profile-position">
-                Marketing Director
-              </p>
-            </div>
-          </div>
 
-          <div class="profile">
-            <div class="profile-img">
-              <img src="images/image-thomas.jpg" alt="Emily" loading="lazy">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/image-thomas.jpg" alt="Emily" loading="lazy">
+              </div>
+              <div class="profile-info">
+                <p class="service-para">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
+                  made it a satisfying and
+                  enjoyable
+                  experience.</p>
+                <h3 class="profile-name">Thomas S.</h3>
+                <p class="profile-position">
+                  Chief Operating Officer
+                </p>
+              </div>
             </div>
-            <div class="profile-info">
-              <p class="service-para">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-                enjoyable
-                experience.</p>
-              <h3 class="profile-name">Thomas S.</h3>
-              <p class="profile-position">
-                Chief Operating Officer
-              </p>
-            </div>
-          </div>
 
-          <div class="profile">
-            <div class="profile-img">
-              <img src="images/image-jennie.jpg" alt="Emily" loading="lazy">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/image-jennie.jpg" alt="Emily" loading="lazy">
+              </div>
+              <div class="profile-info">
+                <p class="service-para">Incredible end result! Our sales increased over 400% when we worked with
+                  Sunnyside. Highly recommended!
+                </p>
+                <h3 class="profile-name">Jennie F.</h3>
+                <p class="profile-position">
+                  Business Owner
+                </p>
+              </div>
             </div>
-            <div class="profile-info">
-              <p class="service-para">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-              </p>
-              <h3 class="profile-name">Jennie F.</h3>
-              <p class="profile-position">
-                Business Owner
-              </p>
-            </div>
-          </div>
           </div>
         </div>
       </section>
@@ -149,17 +159,17 @@
             <source media="(min-width:768px)" srcset="images/desktop/image-gallery-milkbottles.jpg" loading="lazy">
             <img src="images/mobile/image-gallery-milkbottles.jpg" alt="milk bottle" loading="lazy">
           </picture>
-  
+
           <picture>
             <source media="(min-width:768px)" srcset="images/desktop/image-gallery-orange.jpg" loading="lazy">
             <img src="images/mobile/image-gallery-orange.jpg" alt="orange" loading="lazy">
           </picture>
-  
+
           <picture>
             <source media="(min-width:768px)" srcset="images/desktop/image-gallery-cone.jpg" loading="lazy">
             <img src="images/mobile/image-gallery-cone.jpg" alt="cone" loading="lazy">
           </picture>
-  
+
           <picture>
             <source media="(min-width:768px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" loading="lazy">
             <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" loading="lazy">
@@ -191,4 +201,5 @@
     </footer>
   </div>
 </body>
+
 </html>
