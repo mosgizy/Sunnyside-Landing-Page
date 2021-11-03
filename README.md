@@ -2,6 +2,7 @@
 
 ![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
 
+https://mosgizy.github.io/Sunnyside-Landing-Page/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
